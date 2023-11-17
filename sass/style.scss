@@ -39,6 +39,7 @@ body {
   cursor: pointer;
   border-radius: 100%;
   transition: all 0.3s ease-in-out;
+  z-index: 9;
 }
 
 .arrow-icon {

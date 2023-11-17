@@ -1,0 +1,235 @@
+$color-tva: #f9861a;
+$color-dark-tva: #b86517;
+$colorbranches: #aa2d0a;
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+@mixin bg {
+  background-image: url(/tvadocs_00004.jpg);
+  height: auto;
+  background-size: cover;
+}
+
+body {
+  background-color: #040507;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.section {
+  @include bg;
+  height: 116vh;
+}
+
+#arrow-box {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  background-color: $color-tva;
+  bottom: 20px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.arrow-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.tvalogo {
+  z-index: +1;
+  width: 420px;
+  height: 220px;
+  display: block;
+  padding-top: 250px;
+  margin: 0 auto;
+}
+
+.time-icons {
+  width: 52px;
+  position: absolute;
+  bottom: -80px;
+  left: 45px;
+  cursor: pointer;
+}
+
+.heading-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #040507;
+  border: 4px solid $color-tva;
+  height: 120px;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 80px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.heading-wrapper-block {
+  background-color: $color-tva;
+  width: 99%;
+  display: flex;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 60vw;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.miss-minutes-gif {
+  position: absolute;
+  width: 280px;
+  bottom: 160px;
+  right: 150px;
+  cursor: pointer;
+}
+
+.work-section {
+  @include bg;
+}
+
+#arrow-box:hover {
+  box-shadow: 0px 0px 60px 6px $color-tva;
+  transition: all 0.3s ease-in-out;
+}
+
+.time-icons:hover {
+  box-shadow: 0px 0px 20px 1px rgba(255, 166, 0, 0.447);
+}
+
+.heading-wrapper:hover {
+  box-shadow: 0px 0px 100px 1px rgba(255, 166, 0, 0.447);
+  transition: all 0.3s ease-in-out;
+  width: 80%;
+}
+
+.header:hover {
+  width: 80%;
+}
+
+.work-section {
+  padding-top: 30px;
+}
+
+.deadlines-wrapper {
+  width: 100%;
+  display: flex;
+  color: $color-tva;
+  margin-top: 100px;
+  justify-content: space-around;
+
+  h3 {
+    font-weight: 300;
+    padding-top: 1rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+}
+
+h6 {
+  margin: 60px 50px;
+  color: $color-tva;
+}
+
+.page1 {
+  margin: 20px 260px;
+}
+
+.tva-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section2-logo {
+  margin-right: 50px;
+}
+
+.timeline {
+  &Section {
+    @include bg;
+    padding-top: 30px;
+    height: 110vh;
+  }
+
+  &Header {
+    width: 96%;
+    margin: 0 auto;
+    background-color: $colorbranches;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-right: 50px;
+}
+
+.container-branches {
+  position: relative;
+  border-top: 4px solid $colorbranches;
+  border-bottom: 4px solid $colorbranches;
+  margin: 0 auto;
+  width: 95vw;
+
+  img {
+    width: 95vw;
+    height: 300px;
+  }
+}
+
+.divider {
+  width: 95vw;
+  background-color: $colorbranches;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.divider2 {
+  width: 96vw;
+  background-color: $color-tva;
+  height: 4px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.projects-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+
+  h6 {
+    margin: 20px;
+  }
+}
+
+.missminutesangry {
+  width: 200px;
+}
+
